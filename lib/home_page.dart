@@ -12,7 +12,7 @@ class HomeUI extends StatefulWidget {
 class _HomeUIState extends State<HomeUI> {
   final List<String> filters = const ["All", "Adidas", "Nike", "Bata"];
   late String selectedFilter = filters[0];
-
+  int currentPage = 0;
   @override
   void initState() {
     // TODO: implement initState
@@ -111,6 +111,18 @@ class _HomeUIState extends State<HomeUI> {
             )
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        onTap: (value) {
+          setState(() {
+            currentPage = value;
+          });
+        },
+        currentIndex: currentPage,
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
+          BottomNavigationBarItem(icon: Icon(Icons.shopping_cart), label: "")
+        ],
       ),
     );
   }

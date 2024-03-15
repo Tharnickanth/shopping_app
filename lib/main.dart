@@ -50,10 +50,7 @@ class MyApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      home: ProductDetailsPage(
-        Product: Products[0],
-      ),
-
+      home: const HomeUI(),
       /*
       home: const HomeUI(),
       */
