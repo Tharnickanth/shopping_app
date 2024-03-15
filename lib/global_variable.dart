@@ -2,7 +2,7 @@ final Products = [
   {
     'id': 0,
     'title': "Men\'s Nike Shoes",
-    'price': "",
+    'price': 12,
     'imageUrl': "assets/images/shoes_1.png",
     'company': "Nike",
     'sizes': [9, 10, 11, 12],
@@ -10,7 +10,7 @@ final Products = [
   {
     'id': 1,
     'title': "Men\'s Nike Shoes",
-    'price': "",
+    'price': 13,
     'imageUrl': "assets/images/shoes_2.png",
     'company': "Nike",
     'sizes': [9, 10, 11, 12],
@@ -18,7 +18,7 @@ final Products = [
   {
     'id': 2,
     'title': "Men\'s Nike Shoes",
-    'price': "",
+    'price': 13,
     'imageUrl': "assets/images/shoes_3.png",
     'company': "Nike",
     'sizes': [9, 10, 11, 12],
@@ -26,7 +26,7 @@ final Products = [
   {
     'id': 3,
     'title': "Men\'s Nike Shoes",
-    'price': "",
+    'price': 45,
     'imageUrl': "assets/images/shoes_4.png",
     'company': "Nike",
     'sizes': [9, 10, 11, 12],

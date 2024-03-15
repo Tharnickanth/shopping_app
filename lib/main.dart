@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_app/home_page.dart';
+import 'package:shopping_app/product_details_page.dart';
+import 'package:shopping_app/global_variable.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,14 +21,42 @@ class MyApp extends StatelessWidget {
           seedColor: const Color.fromRGBO(254, 206, 1, 1),
           primary: const Color.fromRGBO(254, 206, 1, 1),
         ),
+        appBarTheme: const AppBarTheme(
+          titleTextStyle: TextStyle(
+            fontSize: 20,
+            color: Colors.black,
+          ),
+          centerTitle: true,
+        ),
         inputDecorationTheme: const InputDecorationTheme(
             hintStyle: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 16,
             ),
             prefixIconColor: Color.fromRGBO(119, 199, 199, 1)),
+        textTheme: const TextTheme(
+          titleMedium: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+          titleLarge: TextStyle(
+            fontSize: 34,
+            fontWeight: FontWeight.bold,
+          ),
+          bodySmall: TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        useMaterial3: true,
       ),
+      home: ProductDetailsPage(
+        Product: Products[0],
+      ),
+
+      /*
       home: const HomeUI(),
+      */
     );
   }
 }
