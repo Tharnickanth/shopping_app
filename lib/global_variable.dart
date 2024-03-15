@@ -33,13 +33,13 @@ final Products = [
   }
 ];
 
-final Card = [
+final card = [
   {
     'id': 0,
     'title': "Men\'s Nike Shoes",
     'price': "",
     'imageUrl': "assets/images/shoes_1.png",
     'company': "Nike",
-    'sizes': [9, 10, 11, 12],
+    'sizes': 12,
   }
 ];
